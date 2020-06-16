@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SnoVy</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@1&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container" id="container">
+<!-- ----------------Error Massage Start-------------------- -->
+		<section id="error_msg_sec">
+			<div id="error_msg" class="er">
+				<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+				<p id="error_msg_txt" class="error_msg_txt"> </p>
+		
+			</div>
+		</section>
+<!-- ----------------Error Massage End-------------------- -->
+		<h2 class="log_txt log_Form">LOgIN</h2>
+		<h2 class="reg_txt reg_Form">Registration</h2>
+        <!-- Registration_Form -->
+		<input type="text" class="reg_fname reg_Form" id="reg_fname"placeholder="First Name" onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+		<input type="text" class="reg_lname reg_Form" id="reg_lname"placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+		<input type="text" class="user_name reg_Form" id="user_name"placeholder="User Name" onfocus="this.placeholder=''" onblur="this.placeholder='User Name'">
+		<input type="text" class="email reg_Form" id="email"placeholder="E-mail : example@gmail.com" onfocus="this.placeholder=''" onblur="this.placeholder='example@gmail.com'">
+		<input type="password" class="reg_pass reg_Form" id="reg_pass"placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'">
+        <input type="password" class="Conform_reg_pass reg_Form" id="Conform_reg_pass"placeholder="Conform Password" onfocus="this.placeholder=''" onblur="this.placeholder='Conform Password'">
+        
+        <button class="reg_btn reg_Form" id="reg_btn" onclick="validation()">Submit</button>
+        
+        <!-- Login_Form -->
+		<input type="text" class="log_user_name log_Form" id="log_user_name"placeholder="User Name" onfocus="this.placeholder=''" onblur="this.placeholder='User Name'">
+		<input type="text" class="log_pass log_Form" id="log_pass"placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'">
+
+        <p class="forgor_pass log_Form" id="log_Form" > <a href="#"></a> Forgot Password</p>
+        <p class="no_acc log_Form" id="no_acc" onclick="loder_for_noacc()"> <a href="#"></a> I have no account</p>
+        
+		<button class="Log_btn log_Form" id="Log_btn" onclick="login()">Login</button>
+        
+	</div>
+
+<!-- ----------------Success Massage-------------------- -->
+<section id="suss_msg">
+	<div class="suss_msg_bg_div">
+		<div class="se_main_div" id="se_main_div">
+			<div class="icon icon--order-success svg">
+				<svg xmlns="http://www.w3.org/2000/svg" width="72px" height="72px">
+				  <g fill="none" stroke="#8EC343" stroke-width="2">
+					<circle cx="36" cy="36" r="35" style="stroke-dasharray:240px, 240px; stroke-dashoffset: 480px;"></circle>
+					<path d="M17.417,37.778l9.93,9.909l25.444-25.393" style="stroke-dasharray:50px, 50px; stroke-dashoffset: 0px;"></path>
+				  </g>
+				</svg>
+		
+			  </div>
+			  <p class="suss_txt">Regetration Successfull</p>
+			  <div class="suss_btn_div">
+				<button class="suss_no_btn suss_btn" onclick="login_cancle()">No</button>
+				<button class="suss_login_btn suss_btn" onclick="loder()">Login</button>
+			  </div>
+			
+		</div>
+	</div>
+</section>
+
+<!-- ----------------Loder Start-------------------- -->
+	<section id="loder_section">
+		<div class="loder_container">
+			<div class="loder"></div>
+		</div>
+	</section>
+
+	<script src="./app.js"></script>
+</body>
+</html>

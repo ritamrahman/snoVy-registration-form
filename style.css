@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #dde1e7;}
+
+.log_Form{
+    display: none;
+}
+.container{
+	width: 320px;
+	min-height: 550px;
+	border-radius: 15px;
+	background: #dde1e7;
+	position: relative;
+
+	/* border: 4px ridge #03A9F4; */
+
+	box-shadow:  19px 10px 15px #00000050,
+	             -15px -10px 20px #ffffff90,
+	             inset -2px -2px 2px #00000050,
+	             inset 2px 2px 2px #ffffff90;
+}
+/* Hero Txt */
+.log_txt{
+	font-family: 'Ropa Sans', sans-serif;
+	margin-top: 100px;
+	margin-top: 50px;
+	font-size: 4rem;
+	color: #dde1e7;
+	text-shadow: 6px 2px 4px rgba(0,0,0,0.41);
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+    text-decoration: underline;
+}
+
+.reg_txt{
+	font-family: 'Ropa Sans', sans-serif;
+	margin-top: 100px;
+	margin-top: 50px;
+	font-size: 3.5rem;
+	color: #dde1e7;
+	text-shadow: 6px 2px 4px rgba(0,0,0,0.41);
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+    text-decoration: underline;
+
+}
+/* ============Registration============ */
+/*Input Fild */
+
+.reg_fname , .reg_lname , .user_name , .email , .reg_pass , .Conform_reg_pass{
+    position: absolute;
+	background-color: #dde1e7;
+	height: 40px;
+	left: 5%;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	color: #03A9F4;
+	text-decoration: underline;
+	font-size: 19px;
+	font-style: italic;
+    box-shadow: inset 5px 4px 2px #00000070, 
+             inset -5px -4px 4px #ffffff;
+}
+
+.reg_fname{
+	width: 140px;
+	top: 140px;
+    left: 5%;
+}
+.reg_lname{
+    width: 140px;
+    top: 140px;
+    margin-left: 150px;
+
+}
+.user_name{
+    width: 90%;
+    top: 200px;
+	margin: auto;
+}
+.email{
+    width: 90%;
+    top: 260px;
+	margin: auto;
+}
+.reg_pass{
+    width: 90%;
+    top: 320px;
+	margin: auto;
+}
+.Conform_reg_pass{
+    width: 90%;
+    top: 380px;
+	margin: auto;
+}
+
+/* Registration Button */
+.reg_btn{
+    position: absolute;
+    bottom: 70px;
+    width: 150px;
+	height: 40px;
+    margin-left: 90px;
+    border-radius: 20px;
+    background-color: #dde1e7;
+    cursor: pointer;
+    border: 3px ridge #03A9F4;
+	font-weight: bold;
+	outline: none;
+    font-size: 22px;
+    font-style: italic;
+    box-shadow: 5px 4px 5px #00000080, 
+             -5px -4px 5px #ffffff80,
+             inset -2px -2px 2px #00000080, 
+             inset 2px 2px 2px #ffffff40;
+	background: -webkit-linear-gradient(#44a1e3
+, #0066ff);
+	  -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+/* ============Login============ */
+/*Input Fild */
+.log_user_name , .log_pass{
+    position: absolute;
+	background-color: #dde1e7;
+	height: 40px;
+	left: 5%;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	color: #03A9F4;
+	text-decoration: underline;
+	font-size: 19px;
+	font-style: italic;
+    box-shadow: inset 5px 4px 2px #00000070, 
+             inset -5px -4px 4px #ffffff;
+}
+.log_user_name{
+    width: 90%;
+    top: 200px;
+	margin: auto;
+}
+.log_pass{
+    width: 90%;
+    top: 280px;
+	margin: auto;
+}
+
+/* Login Button */
+.Log_btn{
+    position: absolute;
+    bottom: 70px;
+    width: 150px;
+	height: 40px;
+    margin-left: 90px;
+    border-radius: 20px;
+    background-color: #dde1e7;
+    cursor: pointer;
+    border: 3px ridge #03A9F4;
+	font-weight: bold;
+	outline: none;
+    font-size: 22px;
+    font-style: italic;
+    box-shadow: 5px 4px 5px #00000080, 
+             -5px -4px 5px #ffffff80,
+             inset -2px -2px 2px #00000080, 
+             inset 2px 2px 2px #ffffff40;
+	background: -webkit-linear-gradient(#44a1e3
+, #0066ff);
+	  -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.forgor_pass, .no_acc{
+	position: absolute;
+	bottom: 200px;
+	color: #0066ff;
+	font-size: 15px;
+	margin-left: 20px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.no_acc{
+	right: 0;
+	margin-right: 20px;
+}
+
+/* ----------------Loder Start-------------------- */
+.loder_container{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.41);
+	left: 50%;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border-radius: 20px; */
+	box-shadow: 0 0 5px 2px #00000020,
+				inset 0 0 20px 2px #00000020;
+	transform: translate(-50%, -50%);
+}
+
+#loder_section{
+	display: none;
+}
+.loder {
+	border-top: 16px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+/*  ----------------Success Massage Animation-------------------- */
+#suss_msg{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: none;
+}
+.suss_msg_bg_div{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.41);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.se_main_div{
+	position: absolute;
+	width: 350px;
+	height: 200px;
+	background: #fff;
+	border-radius: 20px;
+	animation: pop-up .5s ease-in-out;
+}
+.icon{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -30%);
+	
+	/* transform: scale(0); */
+	
+}
+@keyframes pop-up{
+	0%{
+		transform:  scale(0);
+		
+	}
+	50%{
+		transform:  scale(1.2);
+
+	}
+	100%{
+		transform:  scale(1);
+
+	}
+}
+
+@-webkit-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+  }
+}
+
+@-ms-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@-ms-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+/* other styles */
+/* .svg svg {
+    display: none
+}
+ */
+.inlinesvg .svg svg {
+    display: inline
+}
+
+/* .svg img {
+    display: none
+} */
+
+.icon--order-success svg path {
+    -webkit-animation: checkmark 0.1s ease-in-out 0.7s backwards;
+    animation: checkmark 0.01s ease-in-out 0.7s backwards
+      -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation-delay: 1s;
+}
+
+.icon--order-success svg circle {
+    -webkit-animation: checkmark-circle 0.2s ease-in-out backwards;
+    animation: checkmark-circle 0.01s ease-in-out backwards
+      -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
+    animation-delay: 0.8s;
+}
+
+/* --------Noty Animetion Text---------- */
+.suss_txt{
+	position: absolute;
+	bottom: 37%;
+	font-size: 1.5rem;
+	margin-left: 59px;
+	color: seagreen;
+	font-family: 'Roboto', sans-serif;
+}
+/* ------------Sucess Button--------------- */
+.suss_btn_div{
+	width: 100%;
+	position: absolute;
+	bottom: 10%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.suss_btn{
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+
+}
+.suss_no_btn{
+	background-color: rgb(211, 33, 33);
+}
+.suss_login_btn{
+	background-color: rgb(68, 211, 33);
+}
+
+
+/* ------------Error Massage -----------*/
+#error_msg_sec{
+	display: none;
+	background-color: #fff;
+	/* position: absolute; */
+	padding: 5px;
+	border-radius: 2px;
+	z-index: 99;
+}
+#error_msg{
+	display: flex;
+}
+#error_msg_txt{z-index: 9999;}
+
+.fa{color: orange; margin-right: 5px;}
+
+/* error massage top arrow */
+#error_msg_sec::after{
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+/* Fast Name */
+.first_name_error_msg{
+	position: absolute;
+	top: 34%;
+	left: 5%;
+}
+/* Last Name */
+.last_name_error_msg{
+	position: absolute;
+	top: 34%;
+	left: 50%;
+}
+/* User Name */
+.user_name_error_msg{
+	position: absolute;
+	top: 44%;
+	left: 25%;
+}
+/* Email */
+.email_error_msg{
+	position: absolute;
+	top: 57%;
+	left: 25%;
+}
+/* Password */
+.pass_error_msg{
+	position: absolute;
+	top: 67%;
+	left: 25%;
+}
+/* Conform Password */
+.Con_pass_error_msg{
+	position: absolute;
+	top: 77%;
+	left: 25%;
+}
+
